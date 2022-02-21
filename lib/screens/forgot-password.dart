@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:foodybite_app/pallete.dart';
 import 'package:foodybite_app/widgets/background-image.dart';
