@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:foodybite_app/pallete.dart';
-import 'package:foodybite_app/widgets/widgets.dart';
+import '../pallete.dart';
+import '../widgets/widgets.dart';
 
 class LoginScreen extends StatelessWidget {
   @override

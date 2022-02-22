@@ -1,9 +1,8 @@
 import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:foodybite_app/pallete.dart';
-import 'package:foodybite_app/widgets/widgets.dart';
+import '../pallete.dart';
+import '../widgets/widgets.dart';
 
 class CreateNewAccount extends StatelessWidget {
   @override
@@ -28,7 +27,7 @@ class CreateNewAccount extends StatelessWidget {
                           filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
                           child: CircleAvatar(
                             radius: size.width * 0.14,
-                            backgroundColor: Colors.grey[400].withOpacity(
+                            backgroundColor: Colors.grey[400]!.withOpacity(
                               0.4,
                             ),
                             child: Icon(

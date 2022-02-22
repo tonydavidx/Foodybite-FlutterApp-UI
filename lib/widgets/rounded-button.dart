@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:foodybite_app/pallete.dart';
+import '../pallete.dart';
 
 class RoundedButton extends StatelessWidget {
   const RoundedButton({
-    Key key,
-    @required this.buttonName,
+    Key? key,
+    required this.buttonName,
   }) : super(key: key);
 
   final String buttonName;
