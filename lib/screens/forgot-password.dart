@@ -32,38 +32,37 @@ class ForgotPassword extends StatelessWidget {
             ),
             centerTitle: true,
           ),
-          body: Column(
-            children: [
-              Center(
-                child: Column(
-                  children: [
-                    SizedBox(
-                      height: size.height * 0.1,
-                    ),
-                    Container(
-                      width: size.width * 0.8,
-                      child: Text(
-                        'Enter your email we will send instruction to reset your password',
-                        style: kBodyText,
-                      ),
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    TextInputField(
-                      icon: FontAwesomeIcons.envelope,
-                      hint: 'Email',
-                      inputType: TextInputType.emailAddress,
-                      inputAction: TextInputAction.done,
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    RoundedButton(buttonName: 'Send')
-                  ],
+          body: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                SizedBox(
+                  height: size.height * 0.1,
                 ),
-              )
-            ],
+                Container(
+                  width: size.width * 0.8,
+                  child: Text(
+                    'Enter your email we will send instruction to reset your password',
+                    style: kBodyText,
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                TextInputField(
+                  icon: FontAwesomeIcons.envelope,
+                  hint: 'Email',
+                  inputType: TextInputType.emailAddress,
+                  inputAction: TextInputAction.done,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                RoundedButton(buttonName: 'Send')
+              ],
+            ),
           ),
         )
       ],
